@@ -123,7 +123,7 @@ class HBNBCommand(cmd.Cmd):
 
         attributes = args.split(" ")
 
-        elif attributes not in HBNBCommand.classes:
+        if attributes not in HBNBCommand.classes:
             print("** class doesn't exist **")
             return
         new_instance = HBNBCommand.classes[attributes]()
